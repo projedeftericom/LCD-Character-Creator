@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LCD Special Character Creation</title>
+    <link
+      rel="icon"
+      href="https://projedefteri.com/araclar/lcd-karakter-olusturucu/img/karakter-olusturucu.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="For Arduino, design your own LCD pixel! - You can use the following online design tool to print special character on the LCD screen."
+    />
+    <meta
+      name="keywords"
+      content="lcd, 16x2 lcd, lcd 16x2, lcd custom character, How to create Special Character, How to create LCD Special Character, lcd character generator, liquid crystal, display, custom character creator, arduino nano, lcd-assistant, lcd özel karakter, karakter, karakter oluşturucu, özel karakter, lcd karakter, pixel, bilgi, rehber, pixel özel oluşturma, pixel oluştur, 16x2 lcd ekran, 16x2 lcd ekran pixeli oluşturma, i2c lcd, i2c, arduino, arduino ide, arduino mega, arduino uno, lcd with arduino, character creation, character, special character"
+    />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <article class="content">
+      <h2 style="text-align: center">
+        <strong
+          ><a href="https://projedefteri.com/en" rel="nofollow ugc"
+            >Proje Defteri</a
+          ><a class="ortaction-button yellow"> -</a
+          ><a class="ortaction-button yellow">
+            LCDAssistant - image2cpp</a
+          ></strong
+        ><a class="ortaction-button yellow"> - </a
+        ><strong
+          ><a href="https://projedefteri.com/en/tools" rel="nofollow ugc"
+            >Back to Tools</a
+          ></strong
+        >
+      </h2>
+      <p style="text-align: center">
+        <a href="https://projedefteri.com/araclar/lcd-karakter-olusturucu/">
+          🇹🇷 For Turkish page</a
+        >
+      </p>
+
+      <h2>For Arduino, design your own LCD pixel!</h2>
+      <div class="main-box">
+        <div class="box-char-pic">
+          <div class="btn-group">
+            <button style="padding: 6px 10px" type="button" id="up">Up</button>
+            &nbsp;&nbsp;
+            <button style="padding: 6px 10px" type="button" id="down">
+              Down
+            </button>
+            &nbsp;&nbsp;
+            <button style="padding: 6px 10px" type="button" id="left">
+              Left
+            </button>
+            &nbsp;&nbsp;
+            <button style="padding: 6px 10px" type="button" id="right">
+              Right
+            </button>
+          </div>
+          <div class="box-char blue">
+            <!-- <div id="loop"></div> -->
+            <div class="col">
+              <div class="dot-px" data-x="0" data-y="0"></div>
+              <div class="dot-px" data-x="0" data-y="1"></div>
+              <div class="dot-px" data-x="0" data-y="2"></div>
+              <div class="dot-px" data-x="0" data-y="3"></div>
+              <div class="dot-px" data-x="0" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="1" data-y="0"></div>
+              <div class="dot-px" data-x="1" data-y="1"></div>
+              <div class="dot-px" data-x="1" data-y="2"></div>
+              <div class="dot-px" data-x="1" data-y="3"></div>
+              <div class="dot-px" data-x="1" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="2" data-y="0"></div>
+              <div class="dot-px" data-x="2" data-y="1"></div>
+              <div class="dot-px" data-x="2" data-y="2"></div>
+              <div class="dot-px" data-x="2" data-y="3"></div>
+              <div class="dot-px" data-x="2" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="3" data-y="0"></div>
+              <div class="dot-px" data-x="3" data-y="1"></div>
+              <div class="dot-px" data-x="3" data-y="2"></div>
+              <div class="dot-px" data-x="3" data-y="3"></div>
+              <div class="dot-px" data-x="3" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="4" data-y="0"></div>
+              <div class="dot-px" data-x="4" data-y="1"></div>
+              <div class="dot-px" data-x="4" data-y="2"></div>
+              <div class="dot-px" data-x="4" data-y="3"></div>
+              <div class="dot-px" data-x="4" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="5" data-y="0"></div>
+              <div class="dot-px" data-x="5" data-y="1"></div>
+              <div class="dot-px" data-x="5" data-y="2"></div>
+              <div class="dot-px" data-x="5" data-y="3"></div>
+              <div class="dot-px" data-x="5" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="6" data-y="0"></div>
+              <div class="dot-px" data-x="6" data-y="1"></div>
+              <div class="dot-px" data-x="6" data-y="2"></div>
+              <div class="dot-px" data-x="6" data-y="3"></div>
+              <div class="dot-px" data-x="6" data-y="4"></div>
+            </div>
+            <div class="col">
+              <div class="dot-px" data-x="7" data-y="0"></div>
+              <div class="dot-px" data-x="7" data-y="1"></div>
+              <div class="dot-px" data-x="7" data-y="2"></div>
+              <div class="dot-px" data-x="7" data-y="3"></div>
+              <div class="dot-px" data-x="7" data-y="4"></div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" id="clear">Clear</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" id="invert">Reverse</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" id="preview">Preview</button>
+          </div>
+
+          <strong>Schemas</strong>
+          <ul class="link-list">
+            <li>
+              <a href="img/ArduinoUnoR3LCD.png" target="_blank"
+                >16x2 LCD Diagram</a
+              >
+            </li>
+            <li>
+              <a href="img/ArduinoUnoR3LCDI2C.png" target="_blank"
+                >16x2 LCD I2C Diagram</a
+              >
+            </li>
+          </ul>
+          <strong>Libraries</strong>
+          <ul class="link-list">
+            <li>
+              <a
+                href="https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library"
+                target="_blank"
+                >LCD I2C Library</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="config">
+          <form action="">
+            <div class="inline">
+              <strong>Color:</strong>
+              <label
+                ><input
+                  type="radio"
+                  id="color"
+                  name="color"
+                  value="blue"
+                  checked
+                />
+                Blue</label
+              >
+              <label
+                ><input type="radio" id="color" name="color" value="green" />
+                Green</label
+              >
+            </div>
+            <div class="inline">
+              <strong>Microcontroller:</strong>
+              <label
+                ><input
+                  type="radio"
+                  id="mcu"
+                  name="mcu"
+                  value="Arduino"
+                  checked
+                  disabled
+                />
+                Arduino</label
+              >
+            </div>
+            <div class="inline">
+              <strong>Interface:</strong>
+              <label
+                ><input
+                  type="radio"
+                  id="interfacing"
+                  name="interfacing"
+                  value="parallel"
+                  checked
+                />
+                Parallel</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="interfacing"
+                  name="interfacing"
+                  value="i2c"
+                />
+                I2C</label
+              >
+            </div>
+            <div class="inline">
+              <strong>Data type:</strong>
+              <label
+                ><input
+                  type="radio"
+                  id="datatype"
+                  name="datatype"
+                  value="bin"
+                  checked
+                />
+                Binary</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="datatype"
+                  name="datatype"
+                  value="hex"
+                />
+                Hex</label
+              >
+            </div>
+            <div class="inline">
+              <strong style="float: left">Cod:</strong>
+              <div id="copybutton" style="float: left">
+                <button
+                  type="button"
+                  onclick="copyFunction()"
+                  class="fa fa-copy"
+                >
+                  &nbsp;Copy
+                </button>
+              </div>
+            </div>
+            <pre
+              style="float: left"
+            ><code class="language-cpp" id="code-box"></code></pre>
+          </form>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <h5 style="text-align: center">
+        &copy; 2022&nbsp;<a href="https://projedefteri.com/">Proje Defteri</a>
+        &middot;
+        <a
+          href="https://projedefteri.com/privacy-policy/"
+          target="_blank"
+          rel="noopener"
+          >Privacy Policy</a
+        >
+        &middot; The page source is edited from
+        <a
+          href="https://maxpromer.github.io/LCD-Character-Creator/"
+          target="_blank"
+          >LCD-Character-Creator</a
+        >.
+      </h5>
+    </footer>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

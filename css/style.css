@@ -1,0 +1,323 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #FFF;
+}
+
+.button {
+	background-color: #82BF56;
+	border: none;
+	color: white;
+	text-decoration: none;
+	display: flex;
+	font-size: 16px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding: 15px;
+	height: 28px;
+}
+
+.baslik {
+	height: 28px;
+	width: 245px;
+}
+
+.baslik:hover {
+	background-color: #004D40;
+}
+
+/* test satırı*/
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+/* Sol buton */
+.action-button {
+	top: -5px;
+	left: -274px;
+	position: relative;
+	padding: 10px 17px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+/* Sağ buton*/
+.baction-button {
+	top: -86px;
+	right: -341px;
+	position: relative;
+	padding: 10px 17px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+/* orta text alt*/
+.deaction-button {
+	position: relative;
+	padding: 10px 278px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'arial', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	border-color: #2980B9 3px solid;
+	right: 0px;
+}
+
+.ortaction-button {
+	top: -5px;
+	left: -274px;
+	position: relative;
+	padding: 10px 17px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.blueorta {
+	background-color: #3498DB;
+}
+
+.action-small-button {
+	position: relative;
+	padding: 10px 17px;
+	margin: 0px 2px 0px 0px;
+	float: left;
+	border-radius: 4px;
+	font-family: 'arial';
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.action-small-button:active {
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;
+}
+
+/* orta text UP*/
+.blue {
+	background-color: #3498DB;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.green {
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.red {
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.yellow {
+	/* 	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358; */
+	top: -44px;
+	left: 25px;
+	position: relative;
+	font-size: large;
+}
+
+.action-button:active {
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;
+}
+
+/* test kodu sonu*/
+
+
+.footer {
+	position: relative;
+	padding: 10px 206px;
+	border-radius: 10px 10px 0px 0px;
+	font-family: 'arial', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-top: #2980B9 3px solid;
+	left: 275px;
+}
+
+.content {
+	max-width: 1024px;
+	margin: auto;
+	display: table;
+}
+
+h1,
+h2 {
+	margin: 0;
+	right: -81px;
+}
+
+h1 {
+	width: 300px;
+	height: 28px;
+	padding: 15px;
+	color: white;
+	background-color: #3498DB;
+}
+
+h2 {
+	font-size: 24px;
+	color: #666;
+}
+
+.main-box {
+	display: table;
+	margin: auto;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.box-char-pic {
+	float: left;
+}
+
+.box-char {
+	padding: 23px;
+	padding-bottom: 15px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+.box-char.green {
+	background: #82BF56;
+	/* background: #2ECC71; */
+}
+
+.box-char.blue {
+	background: #3d62af;
+}
+
+.dot-px {
+	width: 32px;
+	height: 32px;
+	margin: 2px;
+	border: #FFF 1px solid;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.preview.box-char {
+	font-size: 5px;
+}
+
+.preview .dot-px {
+	border: rgba(0, 0, 0, .1) 1px solid;
+	margin: 0;
+	width: 5px;
+	height: 5px;
+}
+
+.config {
+	float: left;
+	margin-left: 15px;
+}
+
+.config strong {
+	width: 160px;
+	display: inline-block;
+}
+
+.config .inline {
+	margin-bottom: 8px;
+}
+
+.config label {
+	width: 120px;
+	display: inline-block;
+}
+
+.green .high {
+	background: #669644;
+	border-color: #5d883e;
+}
+
+.blue .high {
+	background: #FFF;
+	border-color: #FFF;
+}
+
+.btn-group {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.link-list a {
+	color: #00796B;
+	text-decoration: none;
+}
+
+.link-list a:hover {
+	color: #004D40;
+}
+
+button {
+	background: #1ca9d4;
+	padding: 6px 6px;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	outline: none;
+}
+
+.copybuttons {
+	background-color: #28a745;
+	padding: 6px 6px;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	outline: none;
+}
+
+/* Butonun üstüne gelince yanacak renk */
+/* button:hover {
+	background: #26A69A;
+}*/
+
+button:active {
+	background: #2980B9;
+}
